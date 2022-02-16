@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar fixed app>
       <v-toolbar-title>
-        <v-img src="auditsrenovationlogo.jpg" class="logo"></v-img>
+        <v-img src="auditsrenovationlogo.png" class="logo"></v-img>
       </v-toolbar-title>
 
       <v-spacer />

@@ -42,7 +42,7 @@
                 sans engagement sous 24h ouvrés.
               </v-col>
               <v-col cols="12" md="4">
-                <img src="rge.jpg" width="70px" />
+                <img src="rge.jpeg" width="70px" />
               </v-col>
             </v-row>
           </v-card-text>
@@ -107,7 +107,7 @@
       <v-card width="100%">
         <v-row justify="center">
           <v-col cols="12" md="2">
-            <img src="decennale.jpg" class="logo-decennal" alt="" />
+            <img src="decennale.png" class="logo-decennal" alt="" />
           </v-col>
           <v-col cols="12" md="6">
             <v-card-title class="text-center text-primary">
@@ -271,7 +271,7 @@
         </v-row>
         <v-row class="m-2">
           <div class="rapport-prix">
-            <img src="rapportqualite.jpg" class="img-rapport-prix" alt="" />
+            <img src="rapportqualite.png" class="img-rapport-prix" alt="" />
           </div>
           <v-col cols="12" md="3">
             <div class="d-flex flex-column align-items-center">

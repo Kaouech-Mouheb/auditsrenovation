@@ -2,12 +2,11 @@
   <div class="rating">
     <v-row class="bg-img" justify="center">
       <div class="block-value"></div>
+
       <v-col cols="12" md="6" sm="12" class="margin-bg">
-        <h2 class="mt-4">
+        <h2 class="h2">
           Vous avez un projet <strong>d'isolation themrique </strong> ou de
-          <strong>rénovation</strong> ? Vous envisagez actuellement de
-          <strong>rénover</strong> votre bien immobilier, mais vous n’avez pas
-          d’idées concernant les moyens pour les réaliser.
+          <strong>rénovation</strong> ?
         </h2>
 
         <p class="mt-4">
@@ -18,18 +17,33 @@
           >,
           <strong> <span class="d-none">travaux</span> de couverture</strong>,
           <strong><span class="d-none">travaux</span> de façades </strong> et de
-          <strong>rénovation</strong> .<strong>AUDITS rénovation</strong> mais à
+          <strong>rénovation</strong>, <strong>AUDITS rénovation</strong> mais à
           votre disposition Une équipe dédiée.
         </p>
         <p>
           Vous pouvez nous contactez par téléphone ou bien remplir notre
-          formulaire en ligne. 100% de clients satisfaits ! Devis Gratuit sans
-          engagement.
+          formulaire en ligne.
+        </p>
+
+        <p>
+          <v-col cols="12">
+            <v-text-field
+              prepend-icon="mdi-phone"
+              color="red"
+              filled
+              clear-icon="mdi-close-circle"
+              clearable
+              label="Tapez votre numéro pour être rappeler"
+              solo
+              type="number"
+              @click:prepend="calme"
+               hint="cliquez sur l'icone tel"
+            ></v-text-field>
+          </v-col>
         </p>
         <p>
-          Sur simple demande, bénéficiez dès maintenant de notre bilan thermique
-          à domicile, entièrement gratuit et sans engagement, afin d’établir un
-          diagnostic précis de l’état de l’isolation de votre maison.
+          100% de clients satisfaits ! Devis Gratuit sans
+          engagement.
         </p>
       </v-col>
       <v-col cols="12" md="4" sm="12" class="mt-4">
@@ -395,7 +409,11 @@
             <h3 class="h3 m-4">Isolation thermique</h3>
             <v-divider class="mx-4" color="white"></v-divider>
             <ul v-for="i in itemsIsolation" :key="i">
-              <li class="list-unstyled">{{ i }}</li>
+              <li class="list-unstyled">
+                <NuxtLink to="/isolation-thermique">
+                  {{ i }}
+                </NuxtLink>
+              </li>
             </ul>
           </v-col>
           <v-col cols="12" md="4">
@@ -460,6 +478,11 @@ export default {
       "couverture.jpg",
     ],
   }),
+  methods: {
+    calme() {
+      return alert("on vous appelera");
+    },
+  },
 };
 </script>
 <style scoped>
@@ -494,12 +517,11 @@ export default {
   );
 }
 .margin-bg {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 .logo-decennal {
   width: 200px;
 }
-
 
 @media (max-width: 575.98px) {
   .margin-bg[data-v-2a183b29] {
@@ -543,22 +565,21 @@ export default {
   }
 }
 @media (min-width: 576px) and (max-width: 991.98px) {
- .bg-img {
+  .bg-img {
     height: 1600px;
   }
   .block-value {
     height: 1600px;
   }
-   .img-rapport-prix {
+  .img-rapport-prix {
     width: 140px;
   }
   .rapport-prix {
     margin: 10px auto 10px auto;
   }
-   .logo-decennal {
-
+  .logo-decennal {
     display: block;
     margin: 0 auto 0 auto;
   }
- }
+}
 </style>

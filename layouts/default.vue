@@ -2,20 +2,22 @@
   <v-app>
     <v-app-bar fixed app>
       <v-toolbar-title>
-        <v-img src="auditsrenovationlogo.png" class="logo"></v-img>
+       <NuxtLink to="/">
+          <v-img src="auditsrenovationlogo.png" class="logo"></v-img>
+       </NuxtLink>
       </v-toolbar-title>
 
       <v-spacer />
       <div>
         <v-btn disabled text x-large class="small-screen">
-          <v-icon medium class="mr-2"> mdi-phone-forward-outline </v-icon>
+          <v-icon medium class="mr-2"> mdi-phone-forwnkard-outline </v-icon>
           Contactez-nous</v-btn
         >
 
-        <v-btn color="primary" text x-large class="small-screen">
+        <v-btn href="tel:+33618662919" color="primary" text x-large class="small-screen">
           06 18 66 29 19
         </v-btn>
-        <v-btn color="primary" class="small-screen-active" text small>
+        <v-btn href="tel:+33618662919" color="primary" class="small-screen-active" text small>
           <v-icon small class="mr-2e"> mdi-phone-forward-outline </v-icon>
           06 18 66 29 19
         </v-btn>

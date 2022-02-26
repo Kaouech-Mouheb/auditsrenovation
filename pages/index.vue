@@ -25,26 +25,30 @@
           formulaire en ligne.
         </p>
 
-        <p>
-          <v-col cols="12">
-            <v-text-field
-              prepend-icon="mdi-phone"
-              color="red"
-              filled
-              clear-icon="mdi-close-circle"
-              clearable
-              label="Tapez votre numéro pour être rappeler"
-              solo
-              type="number"
-              @click:prepend="calme"
-               hint="cliquez sur l'icone tel"
-            ></v-text-field>
-          </v-col>
-        </p>
-        <p>
-          100% de clients satisfaits ! Devis Gratuit sans
-          engagement.
-        </p>
+        <v-row>
+       <v-form>
+           <v-col cols="12">
+              <v-text-field
+
+            filled
+            clear-icon="mdi-close-circle"
+            clearable
+            label="Tapez votre numéro pour être rappeler"
+            solo
+            type="number"
+
+            hint="cliquez sur le button"
+          ></v-text-field>
+           </v-col>
+        <v-col class="mt-btn-rplmoi">
+            <v-btn color="success"> Rappelez Moi </v-btn>
+          <div>
+            100% de clients satisfaits ! Devis Gratuit sans engagement.
+          </div>
+        </v-col>
+       </v-form>
+        </v-row>
+
       </v-col>
       <v-col cols="12" md="4" sm="12" class="mt-4">
         <v-card>
@@ -521,6 +525,9 @@ export default {
 }
 .logo-decennal {
   width: 200px;
+}
+.mt-btn-rplmoi{
+  margin-top:-30px
 }
 
 @media (max-width: 575.98px) {

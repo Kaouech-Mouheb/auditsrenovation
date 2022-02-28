@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app id="app">
     <v-app-bar fixed app>
       <v-toolbar-title>
        <NuxtLink to="/">
@@ -42,6 +42,12 @@ export default {
 };
 </script>
 <style scoped>
+#app{
+   user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
 .theme--light.v-app-bar.v-toolbar.v-sheet {
   background-color: #fffdfd;
 }

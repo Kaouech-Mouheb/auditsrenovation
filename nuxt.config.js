@@ -12,7 +12,7 @@ export default {
     titleTemplate: '%s - auditsrenovation',
     title: 'auditsrenovation',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'fr'
     },
     meta: [
       { charset: 'utf-8' },
